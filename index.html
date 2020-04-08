@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PiggyVest | Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link rel="font" type="fonts/ttf" href="fonts/Karla/">
+    </head>
+
+    <body>
+        <div id="main">
+            <div class="sub-main">
+                <div class="piggyvest-label">
+                    <img src="img/piggyvest-logo.0b78a8fa.svg">
+                </div>
+                <div class="box-container">
+                    <header class="label-box">
+                        <h1>Create a Secure Account</h1>
+                        <p>Welcome to the future of Savings & Investments</p>
+                    </header>
+                    <form class="form-content-box">
+                        <div class="fullname">
+                            <label class="fname">Full Name</label><br>
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="email">
+                            <label class="emailadd">Email Address</label><br>
+                            <input type="text" placeholder="Email Address">
+                        </div>
+                        <div class="phone-number">
+                            <label class="pnumber">Phone Number</label><br>
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="password">
+                            <label class="passwrd">Password</label><br>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="Referal">
+                            <label class="Referalcode">Referrer Phone or Promo Code (Optional)</label><br>
+                            <input type="text" placeholder="Referrer Phone or Code">
+                        </div>
+                        <div class="survey">
+                            <label class="surveybox">How Did You Hear About Us? (Optional)</label><br>
+                            <input list="social-media" type="text-selector" placeholder="Click to Select">
+                            <datalist id="social-media">
+                                <option value="Facebook"></option>
+                                <option value="Twitter"></option>
+                                <option value="Instagram"></option>
+                            </datalist>
+                        </div>
+                        <div class="btn">
+                            <button class="createbtn" type="submit">CREATE ACCOUNT</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="login">
+                    <a class="signin" href="#">Already have an account? Log In</a>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+
+</html>
