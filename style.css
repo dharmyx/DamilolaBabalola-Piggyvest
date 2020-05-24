@@ -1,29 +1,32 @@
-html {
-    font-family: '-apple-system' ,'BlinkMacSystemFont', 'segoe ui',
-                    'Roboto', 'helvetica neue', 'Arial', 'noto sans', 
-                    'sans-serif', 'apple color emoji', 'segoe ui emoji', 
-                    'segoe ui symbol', 'noto color emoji', 'Karla', 'U8';    
+
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
     line-height: 1.5;
 }
 
 
 body {
-    background-color: #ADD8E6;
+    background-color: #031a42;
 }
 
 #main {
-    width: 1280px;
-    height: 900px;
+    width: 100vw;
+    height: auto;
 }
 
 .sub-main {
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 860px;
+    max-width: 100%;
+    height: auto;
 }
 
 .piggyvest-label {
-    width: 191px;
+    width: fit-content;
     text-align: center;
     color: #062863;
     padding-bottom: 30px;
@@ -33,24 +36,23 @@ body {
 
 .box-container {
     margin: 0 auto;
-    width: 252px;
-    height: 730px;
+    width: 30vw;
     background-color: #ffffff;
-    border-radius: 11px 11px 11px 0px;
+    border-radius: 20px;
 }
 
 .label-box {
-    width: 207px;
-    height: 56px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .form-content-box {
-    width: 207px;
-    height: 580px;
-    margin: 20px;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .fullname,
@@ -59,8 +61,8 @@ body {
 .password,
 .Referal,
 .survey {
-    font-family: 'Tw Cen MT';
-    margin-bottom: 15px;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 1.2rem;
 }
 
 .fname,
@@ -69,9 +71,9 @@ body {
 .passwrd,
 .Referalcode,
 .surveybox {
-    font-family: 'Tw Cen MT';
+    font-family: 'Muli', sans-serif;
     margin-bottom: 4px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 500;
     color: #4a5568;
     line-height: 2;
@@ -83,43 +85,41 @@ input[type=password] {
     width: 100%;
     color: #1a202c;
     background-color: #edf2f7;
-    padding: 10px 5px;
-    box-sizing: border-box;
-    font-size: 100%;
+    padding: 10px 10px;
+    font-size: 0.7rem;
     font-family: inherit;
     border-radius: 5px;
     border: 0 solid #e2e8f0;
+    outline-style: none;
 }
 
 input[type=text-selector] {
     width: 100%;
-    height: 45px;
+    height: 2.8rem;
     color: #1a202c;
     background-color: #edf2f7;
-    padding: 10px 5px;
-    box-sizing: border-box;
-    font-size: 100%;
+    padding: 10px 10px;
+    font-size: 0.7rem;
     font-family: inherit;
     border-radius: 5px;
     border: 0 solid #e2e8f0;
-}
-
-.btn {
-    width: 207px;
-    height: 38px;
+    outline-style: none;
 }
 
 .createbtn {
-    width: 207px;
-    height: 38px;
-    border-radius: 10px 10px 10px 0px;
+    border-radius: 10px;
     background-color: #083e9e;
     color: #ffffff;
     border: 0 solid #e2e8f0;
     cursor: pointer;
-    margin-top: 5px;
-    font-family: 'Tw Cen MT';
-    font-size: 15px;
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 50px;
+    width: 100%;
+    margin: 30px 0 30px;
+    display: inline-block;
+    outline-style: none;
 }
 
 .createbtn:hover {
@@ -131,8 +131,7 @@ input[type=text-selector] {
     color: #ffffff;
     padding: 5px 0px 5px 0px;
     margin-top: 20px;
-    font-weight: 400;
-    font-family: 'Karla';
+    font-family: 'Muli', sans-serif;
 }
 
 .signin {
@@ -145,7 +144,7 @@ input[type=text-selector] {
 }
 
 h1 {
-    font-size: 16px;
+    font-size: 1.7rem;
     color: #083e9e;
     text-align: center;
     font-family: 'Tw Cen MT', 'sans-serif';
@@ -154,7 +153,7 @@ h1 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 0.7rem;
     color: #4a5568;
     text-align: center;
     font-family: 'Karla', 'sans-serif';
@@ -163,14 +162,44 @@ p {
 
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     #main {
         width: 100%;
+    }
+
+    .box-container {
+        width: 85%;
+    }
+
+    .fname,
+    .emailadd,
+    .pnumber,
+    .passwrd,
+    .Referalcode,
+    .surveybox {
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #4a5568;
+    line-height: 2;
+}
+
+    h1 {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+    }
+
+    .createbtn {
+        font-size: 0.8rem;
+        padding: 10px 30px;
+    }
+
+    .login {
+        font-size: 0.7rem;
     }
 }
 
-@media screen and (max-width: 1280px) {
-    #main {
-        width: 100%;
-    }
-}
